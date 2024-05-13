@@ -1,0 +1,67 @@
+# TwitchIO Bot
+
+This is a custom bot created using the twitchio library for Twitch. It provides various functionalities such as giveaways, command scheduling, and more.
+
+## Table of Contents
+
+- [Commands](#commands)
+- [Messages On A Scheduled Interval](#messages-on-a-scheduled-interval)
+- [Custom Commands](#custom-commands)
+- [Contributing](#contributing)
+- [License](#license)
+- [Contact](#contact)
+
+## Commands
+
+Command | Description
+------- | -----------
+`!spits` + length | Spits out some random strings depending on the length that you wanted.
+`!entries` | Once you copy-pasted the random string, you'll be entered for a giveaway!
+`!pickWinner` | This command is for the streamer to pick a random winner from the viewers in Twitch Chat that will win.
+`!followage` | Retrieve how long the user has been following the channel.
+`!uptime` | Displays how long the stream has been live for, or an offline message if the stream is offline.
+`!title` | Retrieve the current stream title.
+`!clear` | Clears all the messages in the chat.
+`!prime` | Displays a Twitch Prime advertisement message.
+`!listall` | Returns a space-separated string of all of the custom commands that have been created. eg. `!command1 !command2 !command3`
+`help` | Sends you the link to the documentation.
+
+## Messages On A Scheduled Interval
+
+Some messages will be repeatedly sent to chat in a scheduled manner, with the user able to customize the interval time between each message.
+
+Currently, the only messages that will loop repeatedly are:
+
+`prime` - Sends a Twitch Prime advertisement message
+
+`water` - Sends a reminder to the streamer to drink water, calculating how much water they should drink to maintain optimal hydration by using stream uptime data.
+
+`stretch` - Sends a reminder for the streamer to stretch every 20 minutes or 40 minutes.
+
+## Custom Commands
+
+Custom commands can be set by using the following schema:
+
+`!cmd OPERATION ARGS`
+
+The bot is still under development and not yet finished. Also working on Music Integration with Spotify.
+
+## Contributing
+
+We welcome any contributions! Before you start, please read our [contributing guidelines](CONTRIBUTING.md).
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
+
+## Acknowledgments
+
+- [TwitchIO](https://twitchio.readthedocs.io/en/stable/) for providing a powerful and easy-to-use library for creating Twitch bots.
+- [Awesome README](https://github.com/matiassingers/awesome-readme) for providing a list of resources for creating a good README.
+- [Keep a Changelog](https://keepachangelog.com/en/1.0.0/) for providing a standard for creating a changelog.
+
+## Contact
+
+For any questions, feel free to contact me at [dannyguo@example.com](mailto:dannyguo@example.com).
+
+
